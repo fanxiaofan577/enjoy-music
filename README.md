@@ -13,3 +13,26 @@ SDK：
 |JAVA|[michael007js](https://github.com/michael007js)|[SpectrumForAndroid](https://github.com/michael007js/SpectrumForAndroid)|第三方|频谱能量可视化|
 |JAVA|[HMY314](https://github.com/HMY314)|[PopWindow](https://github.com/HMY314/PopWindow)|第三方|底部弹窗|
 |JAVA|[zhangliangming](https://github.com/zhangliangming)|[HPLyrics](https://github.com/zhangliangming/HPLyrics)|第三方|歌词|
+
+## 运行效果
+
+## <img src="screenshot\QQ图片20220613174748.jpg" alt="QQ图片20220613174748" style="zoom:25%;" />
+
+<img src="screenshot\QQ图片20220613174801.jpg" alt="QQ图片20220613174801" style="zoom:25%;" />
+
+<img src="screenshot\QQ图片20220613174805.jpg" alt="QQ图片20220613174805" style="zoom:25%;" />
+
+<img src="screenshot\QQ图片20220613174809.jpg" alt="QQ图片20220613174809" style="zoom:25%;" />
+
+<img src="screenshot\QQ图片20220613174814.jpg" alt="QQ图片20220613174814" style="zoom:25%;" />
+
+<img src="screenshot\QQ图片20220613174817.jpg" alt="QQ图片20220613174817" style="zoom:25%;" />
+
+<img src="screenshot\QQ图片20220613174820.jpg" alt="QQ图片20220613174820" style="zoom:25%;" />
+
+<img src="screenshot\QQ图片20220613174824.jpg" alt="QQ图片20220613174824" style="zoom:25%;" />
+
+<img src="screenshot\QQ图片20220613174829.png" alt="QQ图片20220613174829" style="zoom:25%;" />
+
+<img src="screenshot\QQ图片20220613174836.png" alt="QQ图片20220613174836" style="zoom:25%;" />
+
