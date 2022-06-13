@@ -16,7 +16,7 @@ SDK：
 
 ## 运行效果
 
-## <img src="screenshot\QQ图片20220613174748.jpg" alt="QQ图片20220613174748" style="zoom:25%;" />
+## <img src="screenshot\QQ图片20220613174748.jpg" alt="QQ图片20220613174748" style="width:25%;" />
 
 <img src="screenshot\QQ图片20220613174801.jpg" alt="QQ图片20220613174801" style="zoom:25%;" />
 
