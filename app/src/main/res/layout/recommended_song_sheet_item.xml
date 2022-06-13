@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/recommend_song_sheet_item"
+    android:gravity="center"
+    android:layout_marginLeft="@dimen/dp_4"
+    android:layout_marginRight="@dimen/dp_4"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginBottom="@dimen/dp_10"
+    >
+
+    <cn.tiancaifan.enjoy_music.ui.widget.NiceImageView
+        android:id="@+id/recommend_song_sheet_image"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:src="@drawable/player_mask"
+        app:corner_radius="12dp"/>
+
+    <TextView
+        android:id="@+id/recommend_song_sheet_title"
+        android:layout_marginTop="8dp"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:text="世界级古典钢琴曲经典珍藏"
+        android:lines="2"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        />
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="6dp"
+        android:layout_margin="12dp"
+        app:cardElevation="8dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/rank_list_image"
+                android:layout_width="140dp"
+                android:layout_height="140dp" />
+            <TextView
+                android:layout_marginTop="6dp"
+                android:id="@id/rank_list_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="飙升榜"
+                android:lines="1"
+                android:ellipsize="end"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/rank_list_image"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#2c2c2c"/>
+
+            <TextView
+                android:id="@+id/rank_list_dec"
+                android:layout_marginTop="4sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/rank_list_image"
+                android:layout_below="@+id/rank_list_title"
+                android:layout_marginLeft="10dp"
+                android:text="云音乐中每天热度上升最快的100首单曲，每日更新。"
+                android:textSize="12sp"
+                android:lines="2"
+                android:ellipsize="end"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/song_frist"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/rank_list_image"
+                android:layout_below="@+id/rank_list_dec"
+                android:textSize="12sp"
+                android:lines="1"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end" />
+            <TextView
+                android:id="@+id/song_second"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/rank_list_image"
+                android:layout_below="@+id/song_frist"
+                android:textSize="12sp"
+                android:lines="1"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end" />
+            <TextView
+                android:id="@+id/song_third"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/rank_list_image"
+                android:layout_below="@+id/song_second"
+                android:textSize="12sp"
+                android:lines="1"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

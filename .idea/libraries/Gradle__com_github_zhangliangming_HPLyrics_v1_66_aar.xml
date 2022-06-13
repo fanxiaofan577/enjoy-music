@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.zhangliangming:HPLyrics:v1.66@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../GradleHome/caches/transforms-3/9f6d27aa0aa01bc24944d9f31ffbb589/transformed/jetified-HPLyrics-v1.66/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../GradleHome/caches/transforms-3/9f6d27aa0aa01bc24944d9f31ffbb589/transformed/jetified-HPLyrics-v1.66/res" />
+      <root url="file://$PROJECT_DIR$/../../../../GradleHome/caches/transforms-3/9f6d27aa0aa01bc24944d9f31ffbb589/transformed/jetified-HPLyrics-v1.66/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../GradleHome/caches/modules-2/files-2.1/com.github.zhangliangming/HPLyrics/v1.66/c22c15831d45cd21994003f9b6c25a2dadf3331c/HPLyrics-v1.66-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: ./libs/myjar.aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../GradleHome/caches/transforms-3/21f4a081a8bb3e9ab0917b7f0dde9c08/transformed/jetified-myjar/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../GradleHome/caches/transforms-3/21f4a081a8bb3e9ab0917b7f0dde9c08/transformed/jetified-myjar/res" />
+      <root url="file://$PROJECT_DIR$/../../../../GradleHome/caches/transforms-3/21f4a081a8bb3e9ab0917b7f0dde9c08/transformed/jetified-myjar/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

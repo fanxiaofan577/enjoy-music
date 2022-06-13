@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">余音·听者</string>
+    <string name="song_num">%1$d 首</string>
+    <string name="default_num">0 首</string>
+</resources>

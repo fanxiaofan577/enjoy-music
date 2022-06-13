@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recommend_song_list_item"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:elevation="@dimen/dp_10"
+        app:cardCornerRadius="@dimen/dp_10">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:elevation="0dp">
+            <cn.tiancaifan.enjoy_music.ui.widget.NiceImageView
+                android:id="@+id/song_list_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:src="@color/gray_song_sheet_bg"
+                app:corner_radius="10dp"
+                android:layout_marginLeft="20dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/song_list_image"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的名字"
+                    android:maxWidth="80dp"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="12sp"
+
+                    android:id="@+id/recommend_song_list_name"/>
+                <TextView
+                    android:id="@+id/recommend_song_list_ar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="焦迈奇"
+                    android:textSize="10sp"
+                    android:layout_toRightOf="@+id/recommend_song_list_name"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="8dp"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_baseline_play_circle_filled_24" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+

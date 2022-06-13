@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--推荐页面-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="6dp"
+                android:layout_margin="12dp"
+                app:cardElevation="8dp">
+                <com.youth.banner.Banner
+                    android:id="@+id/recommend_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="6dp"
+                android:layout_margin="12dp"
+                app:cardElevation="8dp">
+                <LinearLayout
+                    android:background="@drawable/toolbar_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/dp_20"
+                        android:paddingRight="@dimen/dp_20"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:text="推荐歌单"
+                            android:textSize="@dimen/sp_16"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:id="@+id/seeAllSongSheet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="查看全部"
+                            />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/divider_line" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+                        <cn.tiancaifan.enjoy_music.ui.widget.RecyclerViewAtViewPager2
+                            android:id="@+id/recommend_song_sheet_recyclerview"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="6dp"
+                android:layout_margin="12dp"
+                app:cardElevation="8dp">
+                <LinearLayout
+                    android:background="@drawable/toolbar_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:orientation="vertical"
+                  >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/dp_20"
+                        android:paddingRight="@dimen/dp_20"
+                        >
+
+                        <TextView
+                            android:id="@+id/recommend_song_list_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:text="歌单名歌单名"
+                            android:lines="1"
+                            android:ellipsize="end"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/sp_16"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:id="@+id/recommend_re_playlist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/recommend_refresh_button"
+                            android:text="换一换"
+                            />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/divider_line" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+                        <cn.tiancaifan.enjoy_music.ui.widget.RecyclerViewAtViewPager2
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/recommend_song_list_recyclerview"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="6dp"
+                android:layout_margin="12dp"
+                app:cardElevation="8dp">
+                <LinearLayout
+                    android:background="@drawable/toolbar_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/dp_20"
+                        android:paddingRight="@dimen/dp_20"
+                        >
+
+                        <TextView
+                            android:id="@+id/recommend_singer_list_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:text="推荐歌手"
+                            android:lines="1"
+                            android:ellipsize="end"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/sp_16"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:id="@+id/recommend_re_singer_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/recommend_refresh_button"
+                            android:text="查看全部"
+                            />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/divider_line" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+                        <cn.tiancaifan.enjoy_music.ui.widget.RecyclerViewAtViewPager2
+                            android:id="@+id/recommend_singer_sheet_recyclerview"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

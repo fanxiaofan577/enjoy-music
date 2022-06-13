@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cn.tiancaifan.enjoy_music">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logo"
+        android:theme="@style/Theme.Enjoymusic.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ui.DowLoadActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".ui.MusicCollectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MusicSheetCollectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.AboutActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Enjoymusic.NoActionBar" />
+        <activity
+            android:name=".ui.SingerDetailActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Enjoymusic.NoActionBar" />
+        <activity
+            android:name=".ui.DownloadActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.playlist.PlaylistCatActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Enjoymusic.NoActionBar" />
+        <activity
+            android:name=".ui.HistoryActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Enjoymusic.NoActionBar" />
+        <activity
+            android:name=".ui.SearchInfoActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Enjoymusic.NoActionBar" />
+        <activity
+            android:name=".ui.Text"
+            android:exported="true" />
+        <activity
+            android:name=".ui.MediaPlayer"
+            android:exported="true"
+            android:theme="@style/Theme.Enjoymusic.NoActionBar" />
+        <activity
+            android:name=".ui.SearchActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Enjoymusic.NoActionBar" />
+        <activity
+            android:name=".ui.playlist.SongSheetActivity"
+            android:exported="false"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name=".ui.welcome.WelcomeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Enjoymusic.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Enjoymusic.NoActionBar" />
+
+        <service android:name=".service.MusicService" />
+        <service android:name=".utils.download.DownLoadService" />
+    </application>
+
+</manifest>

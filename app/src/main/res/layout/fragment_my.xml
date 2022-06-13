@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="6dp"
+        android:layout_margin="12dp"
+        app:cardElevation="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <cn.tiancaifan.enjoy_music.ui.widget.LocalItemView
+                android:id="@+id/historyLocalItemView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_56"
+                app:iv_icon="@drawable/ic_svg_player_history"
+                app:tv_desc="@string/default_num"
+                app:tv_name="历史播放"/>
+
+            <cn.tiancaifan.enjoy_music.ui.widget.LocalItemView
+                android:id="@+id/songSheetLocalItemView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_56"
+                app:iv_icon="@drawable/ic_svg_playerlist"
+                app:tv_desc="@string/default_num"
+                app:tv_name="收藏歌单"/>
+
+            <cn.tiancaifan.enjoy_music.ui.widget.LocalItemView
+                android:id="@+id/musicLocalItemView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_56"
+                app:iv_icon="@drawable/ic_svg_collection"
+                app:tv_desc="@string/default_num"
+                app:tv_name="收藏歌曲"/>
+
+            <cn.tiancaifan.enjoy_music.ui.widget.LocalItemView
+                android:id="@+id/downloadLocalItemView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_56"
+                app:iv_icon="@drawable/ic_baseline_download_24"
+                app:iv_icon_color="@color/gray"
+                app:tv_desc="@string/default_num"
+                app:tv_name="下载歌曲"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="6dp"
+        android:layout_margin="12dp"
+        app:cardElevation="8dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_36">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_36">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="通用"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/divider_line" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/cardTimerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:selectableItemBackground"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/text_margin"
+                        android:src="@drawable/ic_baseline_timer_24" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="定时器"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"/>
+                    <Switch
+                        android:id="@+id/night_mode_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:elevation="@dimen/dp_4"
+                        android:paddingStart="@dimen/dp_8"
+                        android:paddingTop="@dimen/dp_2"
+                        android:paddingEnd="@dimen/dp_8"
+                        android:paddingBottom="@dimen/dp_2"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/cardAboutView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:selectableItemBackground"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/text_margin"
+                        android:src="@drawable/ic_baseline_about_outline_24" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="关于"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/text_margin"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/cardExitView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:selectableItemBackground"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/text_margin"
+                        android:src="@drawable/ic_baseline_exit_to_app_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="退出"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/text_margin"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

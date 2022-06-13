@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/main_player">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbar_color"
+            android:elevation="0dp"
+            app:elevation="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="@string/app_name"
+                app:titleTextColor="@color/white" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/main_tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorColor="#ff6699"
+                app:tabRippleColor="@android:color/transparent"
+                app:tabTextColor="@color/white">
+
+            </com.google.android.material.tabs.TabLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/main_player"/>
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardElevation="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@drawable/toolbar_color"
+            android:gravity="center_vertical">
+
+            <cn.tiancaifan.enjoy_music.ui.widget.NiceImageView
+                android:id="@+id/main_album"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_svg_album"
+                android:transitionName="album"
+                app:corner_radius="20dp" />
+
+            <TextView
+                android:id="@+id/main_music_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_toRightOf="@+id/main_album"
+                android:text="歌曲名" />
+
+            <cn.tiancaifan.enjoy_music.ui.widget.NiceImageView
+                android:id="@+id/main_play_list_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_svg_playlist"
+                app:corner_radius="20dp" />
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_32"
+                android:layout_weight="1"
+                android:layout_marginTop="4dp"
+                android:layout_toLeftOf="@+id/main_play_list_button"
+                android:gravity="center">
+
+
+                <cn.tiancaifan.enjoy_music.ui.widget.PlayPauseView
+                    android:id="@+id/main_controller_player"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_32"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp_8"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:elevation="@dimen/dp_10"
+                    android:scaleType="fitXY"
+                    app:anim_duration="300"
+                    app:bg_color="#00FFFFFF"
+                    app:btn_color="@color/white"
+                    app:elevation="10dp" />
+
+            </FrameLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
