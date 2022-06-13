@@ -18,21 +18,21 @@ SDK：
 
 ## <img src="screenshot\QQ图片20220613174748.jpg" alt="QQ图片20220613174748" style="width:25%;" />
 
-<img src="screenshot\QQ图片20220613174801.jpg" alt="QQ图片20220613174801" style="zoom:25%;" />
+<img src="screenshot\QQ图片20220613174801.jpg" alt="QQ图片20220613174801" style="width:25%;" />
 
-<img src="screenshot\QQ图片20220613174805.jpg" alt="QQ图片20220613174805" style="zoom:25%;" />
+<img src="screenshot\QQ图片20220613174805.jpg" alt="QQ图片20220613174805" style="width:25%;" />
 
-<img src="screenshot\QQ图片20220613174809.jpg" alt="QQ图片20220613174809" style="zoom:25%;" />
+<img src="screenshot\QQ图片20220613174809.jpg" alt="QQ图片20220613174809" style="width:25%;" />
 
-<img src="screenshot\QQ图片20220613174814.jpg" alt="QQ图片20220613174814" style="zoom:25%;" />
+<img src="screenshot\QQ图片20220613174814.jpg" alt="QQ图片20220613174814" style="width:25%;" />
 
-<img src="screenshot\QQ图片20220613174817.jpg" alt="QQ图片20220613174817" style="zoom:25%;" />
+<img src="screenshot\QQ图片20220613174817.jpg" alt="QQ图片20220613174817" style="width:25%;" />
 
-<img src="screenshot\QQ图片20220613174820.jpg" alt="QQ图片20220613174820" style="zoom:25%;" />
+<img src="screenshot\QQ图片20220613174820.jpg" alt="QQ图片20220613174820" style="width:25%;" />
 
-<img src="screenshot\QQ图片20220613174824.jpg" alt="QQ图片20220613174824" style="zoom:25%;" />
+<img src="screenshot\QQ图片20220613174824.jpg" alt="QQ图片20220613174824" style="width:25%;" />
 
-<img src="screenshot\QQ图片20220613174829.png" alt="QQ图片20220613174829" style="zoom:25%;" />
+<img src="screenshot\QQ图片20220613174829.png" alt="QQ图片20220613174829" style="width:25%;" />
 
-<img src="screenshot\QQ图片20220613174836.png" alt="QQ图片20220613174836" style="zoom:25%;" />
+<img src="screenshot\QQ图片20220613174836.png" alt="QQ图片20220613174836" style="width:25%;" />
 
